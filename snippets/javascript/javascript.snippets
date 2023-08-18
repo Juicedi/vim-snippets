@@ -361,3 +361,15 @@ snippet as "async"
 	async ${0}
 snippet aw "await"
 	await ${0:${VISUAL}}
+snippet map
+	${1:array}.map((${2:itemName}) => {
+		${0}
+	});
+snippet filter
+	${1:array}.filter((${2:itemName}) => {
+		${0}
+	});
+snippet reduce
+	${1:array}.reduce((${2:acc}, ${3:item}) => {
+		${0}
+	}, ${4:defaultAcc});
